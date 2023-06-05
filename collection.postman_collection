@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "d1127b54-80c1-4c6d-a840-739cf3cfb700",
+		"name": "Hexagonal WebApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Produto",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Gravar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descricao\": \"COCA-COLA 350ML\",\r\n    \"codigoBarra\": \"10001\",\r\n    \"valor\": 3.49\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7087/api/v2/produto",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7087",
+					"path": [
+						"api",
+						"v2",
+						"produto"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
